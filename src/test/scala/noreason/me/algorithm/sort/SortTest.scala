@@ -29,4 +29,8 @@ class SortTest extends FunSuite {
     assertSortResult(Insertion.sort(getSourceValues))
   }
 
+  test("Merge sort should be OK") {
+    assertSortResult(Merge.sort(getSourceValues))
+  }
+
 }

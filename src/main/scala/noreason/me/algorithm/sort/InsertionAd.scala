@@ -5,7 +5,7 @@ Created on 2015-09-08
 @author : MSK
 description :
   插入排序
-  最后将所有大的元素向右移动， 而非
+  最后将所有大的元素向右移动， 而非一对一对挪动
 */
 object InsertionAd extends Sort {
 
