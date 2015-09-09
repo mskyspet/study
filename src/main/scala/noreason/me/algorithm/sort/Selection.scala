@@ -1,7 +1,13 @@
 package noreason.me.algorithm.sort
+/**
+Created on 2015-09-08
 
-class Selection extends Sort{
-  override def sort(data :Array[Integer]): Unit = {
+@author : MSK
+description :
+  选择排序
+  */
+object Selection extends Sort{
+  override def sort(data :Array[Int]): Array[Int] = {
     val end_index = data.length - 1
     for (i <- 0 to end_index ){
       val start_index = i+1
@@ -17,5 +23,6 @@ class Selection extends Sort{
         swap(data, min_index, i)
       }
     }
+    data
   }
 }

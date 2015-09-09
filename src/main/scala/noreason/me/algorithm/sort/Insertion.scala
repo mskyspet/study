@@ -5,10 +5,10 @@ Created on 2015-09-08
 
 @author : MSK
 description :
-  basic insert sort
+  插入排序
 */
-class Insertion extends Sort{
-  override def sort(data: Array[Integer]): Unit = {
+object Insertion extends Sort{
+  override def sort(data: Array[Int]): Array[Int] = {
     val max_index = data.length - 1
     for (i <- 1 to max_index){
       val start_index = i
@@ -18,5 +18,6 @@ class Insertion extends Sort{
         }
       }
     }
+    data
   }
 }
