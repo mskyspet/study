@@ -17,12 +17,10 @@ object Shell extends Sort{
 
     while (k >= 1) {
       for (i <- k to N-1) {
-        for (j <- i to k by -k){
-          if (data(j) < data(j-k)){
-            swap(data, j, j-k)
-          }else{
-            //TODO ignore ?
-          }
+        var j = i
+        while (j >=k && data(j) < data(j-k)) {
+          swap(data, j, j-k)
+          j -= k
         }
       }
       k = k/3
