@@ -27,10 +27,4 @@ object Shell extends Sort{
     }
     data
   }
-
-  def main(args: Array[String]): Unit = {
-    val data: Array[Int] = Array[Int](5, 4, 3, 2, 1)
-    sort(data)
-    data.foreach(println)
-  }
 }

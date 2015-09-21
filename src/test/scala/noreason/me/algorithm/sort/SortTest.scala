@@ -48,9 +48,9 @@ class SortTest extends FunSuite with BeforeAndAfter{
     }
   }
 
-  test("Selection sort should be OK") {
-    assertSortResult(Selection.sort(dataArray))
-  }
+//  test("Selection sort should be OK") {
+//    assertSortResult(Selection.sort(dataArray))
+//  }
 
   test("Insertion sort should be OK") {
     assertSortResult(Insertion.sort(dataArray))
@@ -62,6 +62,10 @@ class SortTest extends FunSuite with BeforeAndAfter{
 
   test("Shell sort should be OK") {
     assertSortResult(Shell.sort(dataArray))
+  }
+
+  test("Quick sort should be OK") {
+    assertSortResult(Quick.sort(dataArray))
   }
 
 }
